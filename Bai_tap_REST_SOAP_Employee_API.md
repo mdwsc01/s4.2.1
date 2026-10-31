@@ -38,7 +38,7 @@ Tài nguyên cần quản lý là **Employee**. Theo quy tắc RESTful, URL sử
 **1. Lấy toàn bộ nhân viên**
 
 ```http
-GET /employees HTTP/1.1
+GET /employees
 Host: localhost:8080
 ```
 
@@ -54,7 +54,7 @@ Ví dụ Response `200 OK`:
 **2. Lấy nhân viên theo ID**
 
 ```http
-GET /employees/1 HTTP/1.1
+GET /employees/1
 Host: localhost:8080
 ```
 
@@ -67,7 +67,7 @@ Ví dụ Response `200 OK`:
 **3. Tạo nhân viên mới**
 
 ```http
-POST /employees HTTP/1.1
+POST /employees
 Host: localhost:8080
 Content-Type: application/json
 
@@ -83,7 +83,7 @@ Ví dụ Response `201 Created`:
 **4. Cập nhật nhân viên**
 
 ```http
-PUT /employees/3 HTTP/1.1
+PUT /employees/3
 Host: localhost:8080
 Content-Type: application/json
 
@@ -99,7 +99,7 @@ Ví dụ Response `200 OK`:
 **5. Xóa nhân viên**
 
 ```http
-DELETE /employees/3 HTTP/1.1
+DELETE /employees/1
 Host: localhost:8080
 ```
 
